@@ -35,7 +35,7 @@ function App() {
           />
           <div className="flex justify-center items-center p-8 md:p-0">
             <form
-              className="flex flex-col gap-5 max-w-full lg:max-w-[85%] text-blue-800"
+              className="flex flex-col gap-6 max-w-full lg:max-w-[85%] text-blue-800"
               onSubmit={handleSubmit((data) => {
                 console.log(data);
               })}
@@ -44,20 +44,22 @@ function App() {
                 Stay updated!
               </h1>
               <p>Join 60,000+ product managers receiving monthly updates on:</p>
-              <div className="flex flex-row items-center gap-4">
-                <img src={IconList} />
-                <p>Product discovery and building what matters</p>
-              </div>
-              <div className="flex flex-row items-center gap-4">
-                <img src={IconList} />
-                <p>Measuring to ensure updates are a success</p>
-              </div>
-              <div className="flex flex-row items-center gap-4">
-                <img
-                  src={IconList}
-                  alt="mobile-illustration"
-                />
-                <p>And much more!</p>
+              <div className="flex flex-col gap-3.5">
+                <div className="flex flex-row items-center gap-4">
+                  <img src={IconList} />
+                  <p>Product discovery and building what matters</p>
+                </div>
+                <div className="flex flex-row items-center gap-4">
+                  <img src={IconList} />
+                  <p>Measuring to ensure updates are a success</p>
+                </div>
+                <div className="flex flex-row items-center gap-4">
+                  <img
+                    src={IconList}
+                    alt="mobile-illustration"
+                  />
+                  <p>And much more!</p>
+                </div>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex items-center justify-between text-sm font-semibold">
@@ -85,7 +87,7 @@ function App() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-800 text-white cursor-pointer py-3 rounded-md flex items-center
+                className="w-full bg-blue-800 text-white cursor-pointer py-3.5 rounded-md flex items-center
                   justify-center hover:bg-gradient-to-r hover:from-pink-500 hover:to-orange-500
                   hover:shadow-[0_8px_20px_0_rgba(236,72,153,0.5)]"
               >
